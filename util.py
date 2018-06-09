@@ -15,6 +15,15 @@ def load_clean_date():
     y = pd.read_csv('data/y.csv', header=None).values.ravel()
     return X, y
 
+
+def load_feature_names():
+    return pd.read_csv('data/feature_names.csv', header=None).values
+
+
+def load_target_names():
+    return pd.read_csv('data/target_names.csv', header=None).values
+
+
 def split_date(test_size=0.33, seed=7, visible=True):
     X, y = load_clean_date()
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=seed)
