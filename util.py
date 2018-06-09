@@ -1,4 +1,4 @@
-from sklearn import datasets
+import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from sklearn.metrics import accuracy_score
@@ -10,26 +10,21 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 
 
-def load_date():
-    # load data
-    iris = datasets.load_iris()
-    X = iris.data
-    y = iris.target
-    target_names = iris.target_names
-    feature_names = iris.feature_names
+def load_clean_date():
+    X = pd.read_csv('data/X.csv', header=None).values
+    y = pd.read_csv('data/y.csv', header=None).values.ravel()
+    return X, y
 
-    print("-----------------------------")
-    print("X.shape: " + str(X.shape))
-    print("y.shape: " + str(y.shape))
-    print("target_names: " + str(target_names))
-    print("feature_names: " + str(feature_names))
-    print("-----------------------------")
-    print()
-
-    # split data into train and test sets
-    seed = 7
-    test_size = 0.33
-    return train_test_split(X, y, test_size=test_size, random_state=seed)
+def split_date(test_size=0.33, seed=7, visible=True):
+    X, y = load_clean_date()
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=seed)
+    if visible:
+        print("-----------------------------")
+        print("test: {}%, seed: {}".format(round(test_size * 100, 2), seed))
+        print("X_train.shape: {}\ty_train.shape: {}".format(X_train.shape, y_train.shape))
+        print("X_test.shape: {}\ty_test.shape: {}".format(X_test.shape, y_test.shape))
+        print("-----------------------------")
+    return X_train, X_test, y_train, y_test
 
 
 def evaluate(y_test, pred):
