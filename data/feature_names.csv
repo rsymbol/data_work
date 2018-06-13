@@ -1,4 +1,10 @@
-sepal length (cm)
-sepal width (cm)
-petal length (cm)
-petal width (cm)
+Pclass
+Name
+Sex
+Age
+SibSp
+Parch
+Ticket
+Fare
+Cabin
+Embarked
