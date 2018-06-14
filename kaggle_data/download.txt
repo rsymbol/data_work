@@ -1,0 +1,6 @@
+# kaggle competitions files -c titanic
+# kaggle competitions download  -c titanic -p C:/Users/СоколовКВ/PycharmProjects/data_work/kaggle_data/titanic
+
+import kaggle as kg
+ex_kg = kg.KaggleApi()
+res = ex_kg.competition_download_files(competition='titanic', path='/test')

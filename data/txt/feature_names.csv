@@ -1,3 +1,4 @@
+PassengerId
 Pclass
 Name
 Sex
@@ -8,3 +9,4 @@ Ticket
 Fare
 Cabin
 Embarked
+Survived

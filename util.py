@@ -1,6 +1,6 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
+import pickle
 
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import auc
@@ -10,22 +10,37 @@ from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
 
 
-def load_clean_date():
-    X = pd.read_csv('data/X.csv', header=None).values
-    y = pd.read_csv('data/y.csv', header=None).values.ravel()
-    return X, y
+def __save_obj(name, obj):
+    with open('data/' + name + '.pkl', 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 
-def load_feature_names():
-    return pd.read_csv('data/feature_names.csv', header=None).values
+def __load_obj(name):
+    with open('data/' + name + '.pkl', 'rb') as f:
+        return pickle.load(f)
 
 
-def load_target_names():
-    return pd.read_csv('data/target_names.csv', header=None).values
+def get_db():
+    ob = __load_obj('db_pd')
+    return __load_obj('db_pd')
+
+
+def get_dict(name):
+    return __load_obj('dict').get(name)
+
+
+def get_feature_names():
+    return get_db().columns.values[1:-1]
+
+
+def get_target_names():
+    return get_dict('target_name')
 
 
 def split_date(test_size=0.33, seed=7, visible=True):
-    X, y = load_clean_date()
+    db = get_db().values
+    X = db[:, 1:-1]
+    y = db[:, -1]
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=test_size, random_state=seed)
     if visible:
         print("-----------------------------")

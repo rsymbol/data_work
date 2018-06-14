@@ -1,6 +1,6 @@
 import util
 
-from xgboost import XGBClassifier
+from other.xgboost import XGBClassifier
 from sklearn.model_selection import GridSearchCV
 
 X_train, X_test, y_train, y_test = util.load_date()

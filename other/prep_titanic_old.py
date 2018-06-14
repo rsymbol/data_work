@@ -3,10 +3,11 @@ import numpy as np
 
 # load data
 db = pd.read_csv('kaggle_data/titanic/train.csv')
-X = db.values[:, 2:]
-y = db.values[:, 1]
-target_names = np.array(['No', 'Yes']).T
-feature_names = np.array(list(db.columns.values))[2:]
+target_column = 'Survived'
+target_names = np.array(['No', 'Yes'])
+X = db.loc[:, db.columns != target_column].values
+y = db.loc[:, db.columns == target_column].values
+feature_names = db.columns[db.columns != target_column].values
 
 # save clean data
 pd.DataFrame(X).to_csv("data/X.csv", header=False, index=False)
