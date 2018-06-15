@@ -21,8 +21,7 @@ def __load_obj(name):
 
 
 def get_db():
-    ob = __load_obj('db_pd')
-    return __load_obj('db_pd')
+    return __load_obj('data')
 
 
 def get_dict(name):
