@@ -3,9 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import LabelBinarizer
-from collections import defaultdict
 
 from scipy import stats
 
@@ -27,20 +25,28 @@ print(db.describe())
 print('------------------------------')
 
 # count unique values of columns
-print('Unique values of columns: {}'.format({c: len(db[c].unique()) for c in db.columns}))
+uni = {c: len(db[c].unique()) for c in db.columns}
+print('Unique values of columns: {}'.format(uni))
+print('---------------------------------')
+print('Unique values of columns less thran 10: {}'.format({d: uni[d] for d in uni if uni[d] < 10}))
 print('---------------------------------')
 
 # unique values of specified columns
-print(db['Embarked'].value_counts())
-print('---------------------------------')
+# print(db['cash_in_out'].value_counts())
+# print('---------------------------------')
 
 # -------------------------------TRANSFORMATION----------------------------------------------------
-db_copy = db.copy().fillna('0')
+db_copy = db.copy().fillna('Nd')
 # preprocessing categorical data
-cat_val = ['Pclass', 'Sex', 'Embarked']
+cat_val = ['cash_in_out', 'display_type', 'scanner_code_reader']
 
-lb = {k: LabelBinarizer().fit(db_copy[k]) for k in cat_val}
-print(lb.get(1))
+lb = {}
+for k in cat_val:
+    lb[k] = LabelBinarizer()
+    db_copy[k] = lb[k].fit_transform(db_copy[k])
+
+print(db_copy.info())
+
 # lb = LabelBinarizer()
 # lb_results = lb.fit_transform(db_copy["Sex"])
 # print(pd.DataFrame(lb_results, columns=lb_style.classes_).head())

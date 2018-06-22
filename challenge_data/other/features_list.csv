@@ -1,0 +1,163 @@
+features;;_prev1;_prev2;_prev3;_prev4;_prev5;_gr1;_gr2;_gr3;_gr4;_gr5;
+atm_id; 1   ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; 1   
+cardreader_error_by_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+hours_since_last_cdm_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+status_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_status_null; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+related_to_status; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cardreader_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_reply_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_session_error_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_request_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_receipt_confirm_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_amount; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+bna_error_by_disticnt_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+non_related_to_status; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_return_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+non_related_to_transactions; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+total_errors; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+cdm_label; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_hasp_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; -     ; -     ; -     ; -     ; -     ; 6   
+avg_card_number_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_dispence_currency_0; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_request_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+transactions_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+days_since_last_cdm_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+cdm_error_by_disticnt_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+last_error_prr_relative; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_return_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+cardreader_error_by_disticnt_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_status_unknown; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_status_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_status_unknown_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_status_null; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_front_prepare_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+prr_error_by_disticnt_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_front_prepare_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_card_capture_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+error_per_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+bna_error_by_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+related_to_non_related; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_reply_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_session_error_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+prr_error_by_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+last_error_cdm_relative; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_status_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+hours_since_last_cardreader_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+non_related_total_errors; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_amount_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_status_ok; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+last_error_cardreader_relative; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+related_to_transactions; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+cdm_error_by_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_epp_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; -     ; -     ; -     ; -     ; -     ; 6   
+avg_bna_accept_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_dispense_status_ok; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_card_capture_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_card_number; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_command_copletion_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_ndc_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; -     ; 10   
+days_since_last_prr_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+age; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; -     ; -     ; -     ; -     ; -     ; 6   
+model; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; -     ; -     ; -     ; -     ; -     ; 6   
+avg_dispence_currency_810; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_prr_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_accept_status_null; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+hours_since_last_bna_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+related_total_errors; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_vault_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_vault_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+days_since_last_bna_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+hours_since_last_prr_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_command_completion_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+status_to_transactions; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_bna_accept_count; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_receipt_confirm_count_distinct_day; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+days_since_last_cardreader_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_cdm_delivery_status_not_taken; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+distinct_days; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+last_error_bna_relative; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+avg_mcrw_error; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 1   ; 11   
+cash_in_out; 1   ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; 1   
+display_type; 1   ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; 1   
+scanner_code_reader; 1   ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; 1   
+target; 1   ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; -     ; 1   
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+;;;;;;;;;;;;
+atm_id;Идентификационный номер УС;;;;;;;;;;;
+dNDCSessionTime;Время начала сессии;;;;;;;;;;;
+sCardNumber;Наличие карты клиента;;;;;;;;;;;
+nTrRequestCount;Событие отправки авторизационного запроса в процессинг (кол-во);;;;;;;;;;;
+nTrReplyCount;Событие получения ответа из процессинга на запрос (кол-во);;;;;;;;;;;
+nCommandCompletionCount;Событие завершения обработки команды, полученной от процессингового центра (кол-во);;;;;;;;;;;
+nBnaAcceptCount;Событие завершения приема наличных модулем приема наличных (кол-во);;;;;;;;;;;
+nBnaUserErrorCount;Событие логической ошибки использования модуля приема наличных (кол-во);;;;;;;;;;;
+nBnaReturnCount;Событие возврата денег клиенту из модуля приема наличных (кол-во);;;;;;;;;;;
+nBnaVaultCount;Событие сброса принятых денег в хранилище модуля приема наличных (кол-во);;;;;;;;;;;
+nCdmDispenseCount;Событие насчета денег диспенсером (кол-во);;;;;;;;;;;
+nCdmDeliveryCount;Событие подачи денег диспенсером клиенту (кол-во);;;;;;;;;;;
+nCdmSprayDispenseCount;Событие насчета денег spray-диспенсером (альтернатива №12)(кол-во);;;;;;;;;;;
+nFrontPrepareCount;Событие завершения подготовки платежа на сервере платежей (кол-во);;;;;;;;;;;
+nFrontConfirmCount;Событие завершения подтверждения платежа на сервере платежей (кол-во);;;;;;;;;;;
+nReceiptPrintCount;Событие печати чека (кол-во);;;;;;;;;;;
+nCardCaptureCount;Событие захвата карты (кол-во);;;;;;;;;;;
+nSessionErrorCount;Логическая ошибка клиентской сессии (кол-во);;;;;;;;;;;
+dCardRemovalTime;Событие возврата карты;;;;;;;;;;;
+dSesionEndTime;Событие окончания клиентской сессии;;;;;;;;;;;
+dCdmDeliveryTime;Время выдачи наличных;;;;;;;;;;;
+sCdmDeliveryDeliveryStatus;Результат операции выдачи денег;;;;;;;;;;;
+dCdmDispenseTime;Время насчета наличных;;;;;;;;;;;
+sCdmDispenseDispenseStatus;Результат операции насчета денег;;;;;;;;;;;
+nCdmDispenseDispenseAmount;Размер насчитанной суммы в минимальной разменной валюте (копейки);;;;;;;;;;;
+nCdmDispenseDispenseCurrency;Код валюты насчитываемой суммы (3 цифры);;;;;;;;;;;
+dBnaAcceptTime;Время приема наличных;;;;;;;;;;;
+sBnaAcceptStatusId;Значение результата завершения приема купюр (id);;;;;;;;;;;
+sBnaAcceptStatusText;Значение результата завершения приема купюр (hex);;;;;;;;;;;
+nBnaAcceptAcceptedAmount;Размер принятой суммы в минимальной разменной валюте (копейки);;;;;;;;;;;
+sBnaAcceptAccaptedNotes;Дополнительные данные по типам принятых банкнот;;;;;;;;;;;
+sBnaAcceptAcceptedCurrency;Код валюты принятой суммы;;;;;;;;;;;
+nBnaAcceptRefuseCount;Количество операций refuse (отказ) за текущую операцию;;;;;;;;;;;
+nBnaAcceptType;Тип операции;;;;;;;;;;;
+nBnaAcceptComment;Комментарий;;;;;;;;;;;
+nBnaAcceptedNotesCount;Количество принятых купюр;;;;;;;;;;;
+sCardRemovalStatus;Результат операции возврата карты;;;;;;;;;;;
+sTrRequestOpCodes;Коды авторизационных запросов;;;;;;;;;;;
+atm_id;Идентификационный номер УС;;;;;;;;;;;
+dModuleStatusTime;Время опроса статуса модулей;;;;;;;;;;;
+dModuleStatusStart;Время запуска модулей;;;;;;;;;;;
+CDMStatus;Статус диспенсера;;;;;;;;;;;
+BNAStatus;Статус модуля приема наличных;;;;;;;;;;;
+CardReaderStatus;Статус карт-ридера;;;;;;;;;;;
+PRRStatus;Статус чекового принтера;;;;;;;;;;;
+ALMStatus;Статус датчика открытия дверей;;;;;;;;;;;
+UPSStatus;Статус UPS (Uninterruptible Power Supply);;;;;;;;;;;
+HASPStatus;Статус HASP-ключа;;;;;;;;;;;
+ConnectionStatus;Статус подключения;;;;;;;;;;;
+MCRWStatus;Статус MCRW (Magnetic Card Reader Writer);;;;;;;;;;;
+PRJStatus;Статус журнального принтера;;;;;;;;;;;
+DEPStatus;Статус DEP (Envelope Deposit);;;;;;;;;;;
+KEYStatus;Статус ключа переключения режимов;;;;;;;;;;;
+MONITORINGStatus;Статус мониторинга устройства;;;;;;;;;;;
+LICENSEStatus;Статус лицензии устройства;;;;;;;;;;;
+NDCStatus;Статус NDC (протокол подключения);;;;;;;;;;;
+EPPStatus;Статус EPP (Encrypting Pin Pads);;;;;;;;;;;
+dResetDevicesStart;Время перезагрузки модулей;;;;;;;;;;;
+dInServiceStart;Время технического опроса устройства;;;;;;;;;;;
+atm_id;Идентификационный номер УС;;;;;;;;;;;
+age;Дата начала гарантии;;;;;;;;;;;
+model;Модель УС: наименование модели;;;;;;;;;;;
+cash_in_out;Тип работы с наличными;;;;;;;;;;;
+display_type;Тип экрана;;;;;;;;;;;
+scanner_code_reader;Сканер чтения штрих-кода;;;;;;;;;;;

@@ -15,11 +15,11 @@ y = db[target_column]
 data = X.assign(target_column = y).rename(columns={"target_column": target_column})
 feature_names = data.columns.values
 
-# save prepared data to txt
-X.to_csv("data/txt/X.csv", header=False, index=False)
-y.to_csv("data/txt/y.csv", header=False, index=False)
-pd.DataFrame(dictionaries.get('target_names')).to_csv("data/txt/target_names.csv", header=False, index=False)
-pd.DataFrame(feature_names).to_csv("data/txt/feature_names.csv", header=False, index=False)
+# save prepared data to csv
+X.to_csv("data/csv/X.csv", header=False, index=False)
+y.to_csv("data/csv/y.csv", header=False, index=False)
+pd.DataFrame(dictionaries.get('target_names')).to_csv("data/csv/target_names.csv", header=False, index=False)
+pd.DataFrame(feature_names).to_csv("data/csv/feature_names.csv", header=False, index=False)
 
 util.__save_obj('data', data)
 util.__save_obj('dict', dictionaries)
