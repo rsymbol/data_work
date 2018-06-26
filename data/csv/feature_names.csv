@@ -905,4 +905,5 @@ avg_cdm_delivery_status_not_taken_gr5
 distinct_days_gr5
 last_error_bna_relative_gr5
 avg_mcrw_error_gr5
+period
 target
