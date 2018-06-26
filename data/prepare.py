@@ -36,7 +36,7 @@ print('---------------------------------')
 # print('---------------------------------')
 
 # -------------------------------TRANSFORMATION----------------------------------------------------
-db_copy = db.copy().fillna('Nd')
+db_copy = db.copy().fillna(0)
 # preprocessing categorical data
 cat_val = ['cash_in_out', 'display_type', 'scanner_code_reader']
 
@@ -46,6 +46,17 @@ for k in cat_val:
     db_copy[k] = lb[k].fit_transform(db_copy[k])
 
 print(db_copy.info())
+
+X = db_copy.iloc[:, :-1]
+y = db_copy.iloc[:, -1]
+print(y.shape)
+
+
+
+
+
+
+
 
 # lb = LabelBinarizer()
 # lb_results = lb.fit_transform(db_copy["Sex"])
