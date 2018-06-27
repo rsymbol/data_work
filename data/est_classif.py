@@ -16,7 +16,9 @@ X_train, X_test, y_train, y_test = util.split_date()
 
 es = [
     util.Estimator("Nearest Neighbors", KNeighborsClassifier(),
-                   {'n_neighbors': [1, 3, 5, 7, 10], 'leaf_size': [1, 5, 10, 30, 50]}),
+                   {'n_neighbors': [1], 'leaf_size': [1]}),
+    # util.Estimator("Nearest Neighbors", KNeighborsClassifier(),
+    #                {'n_neighbors': [1, 3, 5, 7, 10], 'leaf_size': [1, 5, 10, 30, 50]}),
     util.Estimator("Support Vector Classification", SVC(),
                    {'C': [0.01, 0.1, 1.0, 10.0, 100.0], 'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
                     'degree': [1, 2, 3, 5]}),
@@ -51,7 +53,7 @@ es = [
                     'min_samples_split': [2], 'subsample': [0.3]})
 ]
 
-id_est = 4
+id_est = 0
 ex_es = es[id_est]
 print(ex_es.getInfo())
 

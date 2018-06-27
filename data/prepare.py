@@ -4,10 +4,11 @@ import pandas as pd
 import seaborn as sns
 
 from sklearn.preprocessing import LabelBinarizer
-
+from sklearn.preprocessing import StandardScaler
 from scipy import stats
 
 # load data
+util.reset_data()
 db = util.get_db()
 
 # -------------------------------INFORMATION----------------------------------------------------
@@ -15,14 +16,14 @@ db = util.get_db()
 # common info
 print(db.info())
 print('------------------------------')
-print(db.describe())
-print('------------------------------')
+# print(db.describe())
+# print('------------------------------')
 
 # count unique values of columns
-uni = {c: len(db[c].unique()) for c in db.columns}
-print('Unique values of columns: {}'.format(uni))
-print('---------------------------------')
-print('Unique values of columns less thran 10: {}'.format({d: uni[d] for d in uni if uni[d] < 10}))
+# uni = {c: len(db[c].unique()) for c in db.columns}
+# print('Unique values of columns: {}'.format(uni))
+# print('---------------------------------')
+# print('Unique values of columns less thran 10: {}'.format({d: uni[d] for d in uni if uni[d] < 10}))
 print('---------------------------------')
 
 # unique values of specified columns
@@ -38,35 +39,24 @@ lb = {}
 for k in cat_val:
     lb[k] = LabelBinarizer()
     db[k] = lb[k].fit_transform(db[k])
+util.__save_obj('label_binarizer', lb)
 
-print(db.info())
+scaler = StandardScaler()
+db = pd.DataFrame(scaler.fit_transform(db))
+util.__save_obj('scaler', scaler)
 
-util.__save_obj('data', db)
+corr = np.corrcoef(db.iloc[:, :-1], rowvar=False)
 
-
-
-
-
-
-
-
-# lb = LabelBinarizer()
-# lb_results = lb.fit_transform(db_copy["Sex"])
-# print(pd.DataFrame(lb_results, columns=lb_style.classes_).head())
-
-
-# ????
-# print(new_dict(db['Sex']))
-
-# EXAMPLE replacing some item to needs
-# cleanup_nums = {"num_doors": {"four": 4, "two": 2},
-#                 "num_cylinders": {"four": 4, "six": 6, "five": 5, "eight": 8,
-#                                   "two": 2, "twelve": 12, "three": 3}}
-# db.replace(cleanup_nums, inplace=True)
+print(type(corr))
+print(corr.shape)
+print(np.where(corr > 0.5))
+#
+# for i in np.arange(0.0, 1.0, 0.1):
+#     print(str(i) + ": " + str((corr > i).count))
 
 
-# corr = np.corrcoef(db, rowvar=False)
-# # draw heatmap
+
+# draw heatmap
 # sns.set()
 # ax = sns.heatmap(corr)
 # sns.plt.show()
@@ -75,27 +65,4 @@ util.__save_obj('data', db)
 # print(stats.describe(db))
 # print('------------------------------------------------------')
 
-
-#
-#
-# d = defaultdict(LabelEncoder)
-# print(type(d))
-#
-# # Encoding the variable
-# fit = db_copy.apply(lambda x: d[x.name].fit_transform(x))
-# print(fit.shape)
-#
-# # Inverse the encoded
-# fit.apply(lambda x: d[x.name].inverse_transform(x))
-#
-#
-# # Using the dictionary to label future data
-# db_copy.apply(lambda x: d[x.name].transform(x))
-#
-#
-# cat_val = ['Pclass', 'Sex': 2, 'Age': 89, 'SibSp': 7, 'Parch': 7, 'Ticket': 681, 'Fare': 248, 'Cabin': 148, 'Embarked': 4, 'Survived': 2]
-#
-#
-# lb_make = LabelEncoder()
-# db_copy["Sex_"] = lb_make.fit_transform(db_copy["Sex"])
-# print(db_copy.head())
+util.__save_obj('data', db)

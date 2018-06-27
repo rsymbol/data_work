@@ -1,7 +1,7 @@
 import pandas as pd
 import util
 
-db = pd.read_csv('../challenge_data/train_data_prepared.zip', index_col=False, compression='zip', delimiter=';')
+db = pd.read_csv('train_data_prepared.zip', index_col=False, compression='zip', delimiter=';')
 print(db.columns)
 
 # define basic terms
