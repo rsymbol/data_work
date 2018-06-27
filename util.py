@@ -11,13 +11,17 @@ from sklearn.metrics import f1_score
 
 
 def __save_obj(name, obj):
-    with open('data/' + name + '.pkl', 'wb') as f:
+    with open('../data/' + name + '.pkl', 'wb') as f:
         pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 
 def __load_obj(name):
-    with open('data/' + name + '.pkl', 'rb') as f:
+    with open('../data/' + name + '.pkl', 'rb') as f:
         return pickle.load(f)
+
+
+def reset_data():
+    __save_obj('data', __load_obj('data_copy'))
 
 
 def get_db():
