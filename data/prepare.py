@@ -7,12 +7,6 @@ from sklearn.preprocessing import LabelBinarizer
 
 from scipy import stats
 
-
-def new_dict(lst):
-    uni = np.unique(lst)
-    return {i: j for i, j in enumerate(uni)}
-
-
 # load data
 db = util.get_db()
 
@@ -36,20 +30,18 @@ print('---------------------------------')
 # print('---------------------------------')
 
 # -------------------------------TRANSFORMATION----------------------------------------------------
-db_copy = db.copy().fillna(0)
+db = db.fillna(0)
+
 # preprocessing categorical data
 cat_val = ['cash_in_out', 'display_type', 'scanner_code_reader']
-
 lb = {}
 for k in cat_val:
     lb[k] = LabelBinarizer()
-    db_copy[k] = lb[k].fit_transform(db_copy[k])
+    db[k] = lb[k].fit_transform(db[k])
 
-print(db_copy.info())
+print(db.info())
 
-X = db_copy.iloc[:, :-1]
-y = db_copy.iloc[:, -1]
-print(y.shape)
+util.__save_obj('data', db)
 
 
 
